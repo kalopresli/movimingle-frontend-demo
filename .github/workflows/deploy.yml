@@ -34,4 +34,3 @@ jobs:
           output_location: 'build'
           environment_variables: |
             REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}
-            REACT_APP_OTHER_VAR=${{ secrets.REACT_APP_OTHER_VAR }}
