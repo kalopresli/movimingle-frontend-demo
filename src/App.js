@@ -70,8 +70,8 @@ function App() {
       alert("User ID is required");
       return;
     }
-    axios.post(`${apiUrl}/party/create`, { userId: userId }, { headers: headers() })
-      .then(response => setResponseData("Party Created Successfully"))
+    axios.post(`${apiUrl}/party/create`, userId, { headers: headers() })
+      .then(response => setResponseData({ message: "Party Created Successfully" }))
       .catch(error => setResponseData({ error: error.message }));
   };
 
